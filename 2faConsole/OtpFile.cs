@@ -4,15 +4,15 @@ namespace _2faConsole
 {
     public static class OtpFile
     {
-        public static OtpFileDm? Read()
+        public static OtpFileDm Read()
         {
             string? json = QuickFile.Read(PresetPaths.Otps);
             if (json == null)
             {
-                return null;
+                return new OtpFileDm();
             }
 
-            return QuickJson.FromJson<OtpFileDm>(json);
+            return QuickJson.FromJson<OtpFileDm>(json) ?? new OtpFileDm();
         }
         public static bool Write(OtpFileDm otpFileDm)
         {
