@@ -12,6 +12,9 @@
     <Reference Include="Pxoqxo.ConsolePlus">
       <HintPath>..\..\publish\Pxoqxo.ConsolePlus\em1.0\portable\Pxoqxo.ConsolePlus.dll</HintPath>
     </Reference>
+    <Reference Include="Pxoqxo.Quick">
+      <HintPath>..\..\publish\Pxoqxo.Quick\em1.0\portable\Pxoqxo.Quick.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
