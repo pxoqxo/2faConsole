@@ -8,4 +8,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="Pxoqxo.ConsolePlus">
+      <HintPath>..\..\publish\Pxoqxo.ConsolePlus\em1.0\portable\Pxoqxo.ConsolePlus.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
