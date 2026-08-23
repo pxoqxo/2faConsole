@@ -15,6 +15,9 @@
     <Reference Include="Pxoqxo.Ext.Core">
       <HintPath>..\..\publish\Pxoqxo.Ext\em1.0\portable\Pxoqxo.Ext.Core.dll</HintPath>
     </Reference>
+    <Reference Include="Pxoqxo.Otp2fa">
+      <HintPath>..\..\publish\Pxoqxo.Otp2fa\em1.0\portable\Pxoqxo.Otp2fa.dll</HintPath>
+    </Reference>
     <Reference Include="Pxoqxo.Quick">
       <HintPath>..\..\publish\Pxoqxo.Quick\em1.0\portable\Pxoqxo.Quick.dll</HintPath>
     </Reference>
