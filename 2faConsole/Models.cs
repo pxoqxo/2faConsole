@@ -18,14 +18,17 @@ namespace _2faConsole
         [JsonPropertyName("Secret")]
         public string Secret { set; get; } = string.Empty;
 
+        [JsonPropertyName("Digits")]
+        public int? Digits { set; get; } = 0;
+
         [JsonPropertyName("Type")]
         public OtpType Type { set; get; } = OtpType.Unknown;
 
-        [JsonPropertyName("Digits")]
-        public int Digits { set; get; } = 0;
-
         [JsonPropertyName("Counter")]
-        public long Counter { set; get; } = 0;
+        public long? Counter { set; get; } = 0;
+
+        [JsonPropertyName("Incremental")]
+        public bool Incremental { set; get; } = false;
     }
     public enum OtpType
     {
