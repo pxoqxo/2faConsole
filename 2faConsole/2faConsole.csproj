@@ -1,26 +1,55 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
-    <RootNamespace>_2faConsole</RootNamespace>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net8.0</TargetFramework>
+		<RootNamespace>_2faConsole</RootNamespace>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Version>1.0.0.0</Version>
+		<PackageVersion>1.0.0.0</PackageVersion>
+		<FileVersion>1.0.0.0</FileVersion>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<InformationalVersion>1.0.0.0</InformationalVersion>
+		<IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+		<OutputPath>..\..\publish\2faConsole\em1.0</OutputPath>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AppendRuntimeIdentifierToOutputPath>true</AppendRuntimeIdentifierToOutputPath>
+		<MyMassBuild>false</MyMassBuild>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <Reference Include="Pxoqxo.ConsolePlus">
-      <HintPath>..\..\publish\Pxoqxo.ConsolePlus\em1.0\portable\Pxoqxo.ConsolePlus.dll</HintPath>
-    </Reference>
-    <Reference Include="Pxoqxo.Ext.Core">
-      <HintPath>..\..\publish\Pxoqxo.Ext\em1.0\portable\Pxoqxo.Ext.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Pxoqxo.Otp2fa">
-      <HintPath>..\..\publish\Pxoqxo.Otp2fa\em1.0\portable\Pxoqxo.Otp2fa.dll</HintPath>
-    </Reference>
-    <Reference Include="Pxoqxo.Quick">
-      <HintPath>..\..\publish\Pxoqxo.Quick\em1.0\portable\Pxoqxo.Quick.dll</HintPath>
-    </Reference>
-  </ItemGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DebugType>portable</DebugType>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DebugType>none</DebugType>
+	</PropertyGroup>
+
+	<Target Name="MassBuild" Condition="'$(MyMassBuild)'!='true' And '$(Configuration)'=='Release'" AfterTargets="Build">
+		<Exec Command="dotnet build -c Release -r win-x86     -p:MyMassBuild=true" />
+		<Exec Command="dotnet build -c Release -r win-x64     -p:MyMassBuild=true" />
+		<Exec Command="dotnet build -c Release -r win-arm64   -p:MyMassBuild=true" />
+		<Exec Command="dotnet build -c Release -r osx-x64     -p:MyMassBuild=true" />
+		<Exec Command="dotnet build -c Release -r osx-arm64   -p:MyMassBuild=true" />
+		<Exec Command="dotnet build -c Release -r linux-x64   -p:MyMassBuild=true" />
+		<Exec Command="dotnet build -c Release -r linux-arm   -p:MyMassBuild=true" />
+		<Exec Command="dotnet build -c Release -r linux-arm64 -p:MyMassBuild=true" />
+	</Target>
+
+	<ItemGroup>
+		<Reference Include="Pxoqxo.ConsolePlus">
+			<HintPath>..\..\publish\Pxoqxo.ConsolePlus\em1.0\portable\Pxoqxo.ConsolePlus.dll</HintPath>
+		</Reference>
+		<Reference Include="Pxoqxo.Ext.Core">
+			<HintPath>..\..\publish\Pxoqxo.Ext\em1.0\portable\Pxoqxo.Ext.Core.dll</HintPath>
+		</Reference>
+		<Reference Include="Pxoqxo.Otp2fa">
+			<HintPath>..\..\publish\Pxoqxo.Otp2fa\em1.0\portable\Pxoqxo.Otp2fa.dll</HintPath>
+		</Reference>
+		<Reference Include="Pxoqxo.Quick">
+			<HintPath>..\..\publish\Pxoqxo.Quick\em1.0\portable\Pxoqxo.Quick.dll</HintPath>
+		</Reference>
+	</ItemGroup>
 
 </Project>
