@@ -38,8 +38,8 @@
 	</Target>
 
 	<ItemGroup>
-	  <None Remove="Assets\Images\favicon.ico" />
-	  <None Remove="Assets\Images\favicon.jpg" />
+		<None Remove="Assets\Images\favicon.ico" />
+		<None Remove="Assets\Images\favicon.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -58,8 +58,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Resource Include="Assets\Images\favicon.ico" />
-	  <Resource Include="Assets\Images\favicon.jpg" />
+		<Resource Include="Assets\Images\favicon.ico" />
+		<Resource Include="Assets\Images\favicon.jpg" />
 	</ItemGroup>
 
 </Project>
