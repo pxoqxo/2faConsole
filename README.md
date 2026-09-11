@@ -1,5 +1,9 @@
 # 🖥️ 2faConsole
 
+<p align="center">
+  <img src="assets/images/profile.jpg" width="350">
+</p>
+
 **2faConsole** is a lightweight ⚡, cross-platform 🖥️ two-factor authentication **(2FA)** console application built with **C#** 💖 **.NET**. Powered by 🔋 the dependency-free **Pxoqxo.Otp2fa** library, it delivers secure 🔒, terminal-based OTP management 🧰 without the bloat.
 
 🛡️ **100% Free & Open-Source Software (FOSS)**
