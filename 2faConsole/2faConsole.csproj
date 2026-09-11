@@ -16,6 +16,7 @@
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 		<AppendRuntimeIdentifierToOutputPath>true</AppendRuntimeIdentifierToOutputPath>
 		<MyMassBuild>false</MyMassBuild>
+		<ApplicationIcon>Assets\Images\favicon.ico</ApplicationIcon>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -40,6 +41,10 @@
 	<ItemGroup>
 		<None Remove="Assets\Images\favicon.ico" />
 		<None Remove="Assets\Images\favicon.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="Assets\Images\favicon.ico" />
 	</ItemGroup>
 
 	<ItemGroup>
