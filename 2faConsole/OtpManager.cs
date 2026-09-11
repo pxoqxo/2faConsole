@@ -3,7 +3,7 @@ using Pxoqxo.Ext.Core;
 using Pxoqxo.Otp2fa;
 using System.Text;
 
-namespace _2faConsole
+namespace Pxoqxo._2faConsole
 {
     public static class OtpManager
     {

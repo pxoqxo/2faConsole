@@ -1,6 +1,6 @@
 ﻿using Pxoqxo.Quick;
 
-namespace _2faConsole
+namespace Pxoqxo._2faConsole
 {
     public static class OtpFile
     {

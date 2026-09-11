@@ -1,4 +1,4 @@
-﻿using _2faConsole;
+﻿using Pxoqxo._2faConsole;
 
 while (true)
 {

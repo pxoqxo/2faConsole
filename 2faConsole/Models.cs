@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace _2faConsole
+namespace Pxoqxo._2faConsole
 {
     public sealed class OtpFileDm
     {

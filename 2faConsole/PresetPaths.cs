@@ -1,4 +1,4 @@
-﻿namespace _2faConsole
+﻿namespace Pxoqxo._2faConsole
 {
     internal static class PresetPaths
     {
